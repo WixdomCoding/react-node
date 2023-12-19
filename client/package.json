@@ -1,29 +1,27 @@
 {
-  "name": "react-node",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@prisma/client": "^5.7.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.2",
-    "axois": "^0.0.1-security",
-    "bcrypt": "^5.1.1",
-    "body-parser": "^1.20.2",
-    "cookie-parser": "^1.4.6",
-    "express": "^4.18.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router": "^6.21.0",
+    "react-router-dom": "^6.21.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "nodemon server/index.js",
-    "build": "cd client && npm install && npm run build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "http://127.0.0.1:3002",
+
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -41,14 +39,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "devDependencies": {
-    "nodemon": "^3.0.2",
-    "prisma": "^5.7.0"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }
